@@ -17,6 +17,7 @@ const RegisterForm: React.FC = () => {
     control,
     handleSubmit,
     register,
+    reset, // Додаємо reset
     formState: { errors },
   } = useForm<FormData>({
     mode: "all",
@@ -24,6 +25,7 @@ const RegisterForm: React.FC = () => {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
+    reset(); // Очищуємо поля форми
   };
 
   return (

@@ -1,3 +1,4 @@
+"use client"
 import Ceo from "./components/Ceo/Ceo";
 import Hero from "./components/Hero/Hero";
 import Info from "./components/Info";

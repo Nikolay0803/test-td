@@ -1,19 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import "ion-rangeslider/css/ion.rangeSlider.min.css";
-import jQuery from "jquery";
-import "ion-rangeslider/js/ion.rangeSlider.min.js";
-
-interface IonRangeSliderData {
-  from: number;
-}
+import React, { useState } from "react";
+import "rc-slider/assets/index.css";
+import Slider from "rc-slider";
 
 export default function Calculator() {
   const [months, setMonths] = useState<number>(1);
   const [amount, setAmount] = useState<number>(300);
-
-  const monthsSlider = useRef<HTMLInputElement>(null);
-  const amountSlider = useRef<HTMLInputElement>(null);
 
   const calculateProfit = (months: number, amount: number): number => {
     const rate = 0.05; // Місячна відсоткова ставка
@@ -21,44 +13,52 @@ export default function Calculator() {
     return profit;
   };
 
-  useEffect(() => {
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    if (monthsSlider.current) {
-      (jQuery(monthsSlider.current) as any).ionRangeSlider({
-        skin: "round",
-        min: 1,
-        max: 12,
-        from: months,
-        grid: true,
-        step: 1,
-        onFinish: (data: IonRangeSliderData) => setMonths(data.from),
-      });
+  const handleMonthsChange = (value: number | number[]) => {
+    if (typeof value === "number") {
+      setMonths(value);
     }
+  };
 
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    if (amountSlider.current) {
-      (jQuery(amountSlider.current) as any).ionRangeSlider({
-        skin: "round",
-        min: 300,
-        max: 15000,
-        from: amount,
-        grid: true,
-        step: 1,
-        onFinish: (data: IonRangeSliderData) => setAmount(data.from),
-      });
+  const handleAmountChange = (value: number | number[]) => {
+    if (typeof value === "number") {
+      setAmount(value);
     }
-  }, [months, amount]);
+  };
 
   return (
-    <div className="w-[410px] md:w-[690px] bg-white p-10 rounded-lg shadow-lg">
-      <h2 className="text-2xl text-center font-bold mb-4">Potencijal Dobiti</h2>
-
-      <div className="mb-6">
-        <input ref={monthsSlider} type="text" />
+    <div className="max-w-[690px] md:w-[690px] bg-white p-10 pt-[90px] rounded-lg shadow-lg">
+      <div className="mb-[75px]">
+        <Slider
+          min={1}
+          max={12}
+          value={months}
+          onChange={handleMonthsChange}
+          marks={{
+            1: "1",
+            3: "3",
+            6: "6",
+            9: "9",
+            12: "12",
+          }}
+          step={1}
+        />
       </div>
 
       <div className="mb-6">
-        <input ref={amountSlider} type="text" />
+        <Slider
+          min={300}
+          max={15000}
+          value={amount}
+          onChange={handleAmountChange}
+          marks={{
+            300: "300",
+            3975: "3975",
+            7650: "7650",
+            11325: "11325",
+            15000: "15000",
+          }}
+          step={1}
+        />
       </div>
 
       <button className="mt-6 w-full bg-custom-gradient text-[20px] md:text-[26px] whitespace-nowrap text-white py-2 md:py-5 px-auto rounded-lg">
