@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Logo from "../assets/Logo.svg?react";
-import Container from "./Container";
-import Menu from "../assets/menu.svg?react";
+import Logo from "../../assets/Logo.svg?react";
+import Container from "../Container/Container";
+import Menu from "../../assets/menu.svg?react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

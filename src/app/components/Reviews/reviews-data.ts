@@ -1,8 +1,8 @@
-import Avatar_Jeff from "../../../assets/avatar-jeff.png";
-import Avatar_Bill from "../../../assets/avatar-bill.png";
-import Avatar_Camera from "../../../assets/avatar-camera.png";
-import Avatar_Suit from "../../../assets/avatar-suit.png";
-import Avatar_Scarf from "../../../assets/avatar-scarf.png";
+import Avatar_Jeff from "../../assets/avatar-jeff.png";
+import Avatar_Bill from "../../assets/avatar-bill.png";
+import Avatar_Camera from "../../assets/avatar-camera.png";
+import Avatar_Suit from "../../assets/avatar-suit.png";
+import Avatar_Scarf from "../../assets/avatar-scarf.png";
 
 
 export const authorData = [

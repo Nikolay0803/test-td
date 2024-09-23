@@ -1,9 +1,9 @@
-"use client"
-import Container from "../Container";
+"use client";
+import Container from "../Container/Container";
 import Hero_logo from "../../assets/Hero-logo.png";
 import Hero_cuboid from "../../assets/Hero-cuboid.png";
 import Image from "next/image";
-import RegisterForm from "./components/RegisterForm";
+import RegisterForm from "./RegisterForm";
 
 export default function Hero() {
   return (

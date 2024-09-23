@@ -4,10 +4,10 @@ import "swiper/css";
 import Image from "next/image";
 import ReviewsBg from "../..//assets/Reviews-border.png";
 import Facebook from "../../assets/Facebook.svg?react";
-import Container from "../Container";
+import Container from "../Container/Container";
 
 import { Autoplay } from "swiper/modules";
-import { authorData } from "./helpers/reviews-data";
+import { authorData } from "./reviews-data";
 
 export default function Reviews() {
   return (

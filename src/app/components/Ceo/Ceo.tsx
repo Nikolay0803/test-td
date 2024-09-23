@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Container from "../Container";
+import Container from "../Container/Container";
 import Ceo_photo from "../../assets/Ceo.png";
 import Ceo_Logo from "../../assets/Ceo-Logo-city.png";
-import Calculator from "./components/Сalculator";
+import Calculator from "./Сalculator";
 
 export default function Ceo() {
   return (

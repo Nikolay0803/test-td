@@ -1,5 +1,5 @@
-import Container from "./Container";
-import Logo from "../assets/Logo.svg?react";
+import Container from "../Container/Container";
+import Logo from "../../assets/Logo.svg?react";
 import Link from "next/link";
 
 export default function Footer() {

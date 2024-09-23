@@ -1,7 +1,7 @@
-import Container from "./Container";
-import Sheet from "../assets/Info-sheet.svg?react";
-import Hat from "../assets/Info-hat.svg?react";
-import Tree from "../assets/Info-tree.svg?react";
+import Container from "../Container/Container";
+import Sheet from "../../assets/Info-sheet.svg?react";
+import Hat from "../../assets/Info-hat.svg?react";
+import Tree from "../../assets/Info-tree.svg?react";
 
 export default function Info() {
   return (

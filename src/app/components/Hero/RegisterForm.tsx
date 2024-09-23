@@ -12,7 +12,7 @@ type FormData = {
   email: string;
 };
 
-const RegisterForm: React.FC = () => {
+export default function RegisterForm() {
   const {
     control,
     handleSubmit,
@@ -105,6 +105,4 @@ const RegisterForm: React.FC = () => {
       </button>
     </form>
   );
-};
-
-export default RegisterForm;
+}

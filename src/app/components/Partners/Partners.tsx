@@ -1,10 +1,10 @@
-import Container from "./Container";
-import Mediobanca from "../assets/mediobanca.svg?react";
-import Unicredit from "../assets/unicredit.svg?react";
-import Banca from "../assets/banca.svg?react";
-import BD from "../assets/b&d.svg?react";
-import Barlo from "../assets/barlo.svg?react";
-import Logo from "../assets/Logo.svg?react";
+import Container from "../Container/Container";
+import Mediobanca from "../../assets/mediobanca.svg?react";
+import Unicredit from "../../assets/unicredit.svg?react";
+import Banca from "../../assets/banca.svg?react";
+import BD from "../../assets/b&d.svg?react";
+import Barlo from "../../assets/barlo.svg?react";
+import Logo from "../../assets/Logo.svg?react";
 
 export default function Partners() {
   return (
