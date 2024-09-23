@@ -8,7 +8,7 @@ export default function Calculator() {
   const [amount, setAmount] = useState<number>(300);
 
   const calculateProfit = (months: number, amount: number): number => {
-    const rate = 0.05; // Місячна відсоткова ставка
+    const rate = 0.05;
     const profit = amount + amount * rate * months;
     return profit;
   };

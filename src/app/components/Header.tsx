@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Logo from "../assets/Logo.svg?react";
 import Container from "./Container";
-import Menu from "../assets/menu.svg?react"
+import Menu from "../assets/menu.svg?react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,16 +18,13 @@ export default function Header() {
           <Link href="/">
             <Logo />
           </Link>
-
-          {/* Кнопка бургер-меню для мобільних */}
           <button
             className="block sm:hidden p-2 rounded-md focus:outline-none"
             onClick={toggleMenu}
           >
             <Menu />
           </button>
-
-              <ul className="hidden sm:flex items-center gap-7 text-xl">
+          <ul className="hidden sm:flex items-center gap-7 text-xl">
             <li>
               <Link href="#info-section">Informazioni</Link>
             </li>
@@ -40,7 +37,7 @@ export default function Header() {
           </ul>
         </nav>
 
-          {isMenuOpen && (
+        {isMenuOpen && (
           <nav className="sm:hidden fixed top-0 left-0 w-screen h-screen bg-gradient-to-b from-[#D81E05] to-[#490900] text-[#121417] dark:bg-[#1A1A1A] dark:text-[#E4E4E4] shadow-md z-50">
             <button
               className="absolute top-5 right-5 text-2xl"
