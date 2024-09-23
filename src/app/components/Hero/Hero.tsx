@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="mb-[92px]">
       <Container>
         <h1 className="hidden">Hero Section</h1>
-        <div className="flex mb-[53px] md:mb-[75px] pl-[27px] md:pl-[159px] ">
+        <div className="flex mb-[53px] md:mb-[75px] pl-[27px] lg:pl-[159px] ">
           <p className="max-w-[467px] text-[#D81E05] text-2xl md:text-[28px] flex justify-center items-center">
             Investire 250 euro per raggiungere 5000 euro in una settimana vi
             sembra impossibile? Con il Gruppo Generali potete fare ancora di

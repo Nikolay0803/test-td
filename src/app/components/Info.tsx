@@ -11,7 +11,7 @@ export default function Info() {
           Inizia a servire con noi
         </h1>
         <ul className="flex flex-col lg:flex-row">
-          <li className="border-none md:border-r-2 md:border-[#EE1B25] px-8 py-2 flex flex-col items-center text-center md:items-start md:text-left">
+          <li className="border-none md:border-r-2 md:border-[#EE1B25] px-8 py-2 flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-[67px] h-[85px] mb-[48px]">
               <Sheet />
             </div>
@@ -24,7 +24,7 @@ export default function Info() {
               INIZIARE
             </button>
           </li>
-          <li className="border-none md:border-r-2 md:border-[#EE1B25] px-8 py-2 flex flex-col items-center text-center md:items-start md:text-left">
+          <li className="border-none md:border-r-2 md:border-[#EE1B25] px-8 py-2 flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-[95px] h-[65px] mb-[30px]">
               <Hat />
             </div>
@@ -40,7 +40,7 @@ export default function Info() {
               INIZIARE
             </button>
           </li>
-          <li className="px-8 py-2 flex flex-col items-center text-center md:items-start md:text-left">
+          <li className="px-8 py-2 flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="w-[82px] h-[82px] mb-[32px]">
               <Tree className="mb-[52px]" />
             </div>
