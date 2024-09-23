@@ -46,7 +46,9 @@ export default function RegisterForm() {
           className="py-[11px] px-3 rounded-[4px]"
         />
         {errors.firstName && (
-          <span className="text-red-500">{errors.firstName.message}</span>
+          <span className="text-[#D81E05] text-xs">
+            {errors.firstName.message}
+          </span>
         )}
 
         <input
@@ -61,7 +63,9 @@ export default function RegisterForm() {
           className="py-[11px] px-3 rounded-[4px]"
         />
         {errors.lastName && (
-          <span className="text-red-500">{errors.lastName.message}</span>
+          <span className="text-[#D81E05] text-xs">
+            {errors.lastName.message}
+          </span>
         )}
 
         <input
@@ -76,7 +80,7 @@ export default function RegisterForm() {
           className="py-[11px] px-3 rounded-[4px]"
         />
         {errors.email && (
-          <span className="text-red-500">{errors.email.message}</span>
+          <span className="text-[#D81E05] text-xs">{errors.email.message}</span>
         )}
 
         <Controller
@@ -94,7 +98,7 @@ export default function RegisterForm() {
           )}
         />
         {errors.phone && (
-          <span className="text-red-500">{errors.phone.message}</span>
+          <span className="text-[#D81E05] text-xs">{errors.phone.message}</span>
         )}
       </span>
       <button
