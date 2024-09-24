@@ -92,7 +92,7 @@ export default function RegisterForm() {
               {...field}
               country={"ua"}
               inputProps={{
-                style: { marginLeft: "1px", height: "45px" },
+                style: { marginLeft: "1px", height: "45px", width: "100%", },
               }}
             />
           )}
